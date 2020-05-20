@@ -1,0 +1,28 @@
+package p;
+import p3.*;
+import p2.*;
+import p1.*;
+import java.util.Scanner;
+public class MainClass {
+
+	public static void main(String[] args) {
+		CircleAr c = new CircleAr();
+        Rectangle r = new Rectangle();
+        Shape s;
+        int choice;
+        double len, bre;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("  Enter your choice ");
+        System.out.println("1. Area of circle");
+        System.out.println("2. Area of rectangle ");
+        choice = sc.nextInt();
+        switch(choice) {
+        case 1 : System.out.println("Enter the radius : ");
+        len = sc.nextDouble();
+        s = c;
+        s.area(len, 0);
+        }
+        
+	}
+
+}

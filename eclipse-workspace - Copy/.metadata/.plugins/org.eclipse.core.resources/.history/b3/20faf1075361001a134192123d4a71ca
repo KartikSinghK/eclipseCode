@@ -1,0 +1,22 @@
+package underAge;
+import java.util.Scanner;
+public class ExceptionDemo {
+    void test(int age) {
+    	if(age < 18)
+    		throw new UnderAge(age);
+    }
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int enAge;
+		System.out.println("Enter you age : ");
+		enAge = sc.nextInt();
+		try {
+			test(enAge);
+		}
+		catch(UnderAge u) {
+			System.out.println(u);
+		}
+
+	
+
+}

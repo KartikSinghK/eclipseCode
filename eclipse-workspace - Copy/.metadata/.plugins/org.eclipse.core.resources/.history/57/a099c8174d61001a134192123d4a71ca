@@ -1,0 +1,18 @@
+package p;
+import p3.*;
+import p2.*;
+import p1.*;
+import java.util.Scanner;
+public class MainClass {
+
+	public static void main(String[] args) {
+		CircleAr c = new CircleAr();
+        Rectangle r = new Rectangle();
+        Shape s;
+        System.out.println("  Enter your choice ");
+        System.out.println("1. Area of circle");
+        Scanner sc = new Scanner(System.in);
+        
+	}
+
+}

@@ -1,0 +1,13 @@
+package jskjdkf;
+
+public class sssss {
+	public static void main(String[] args) {
+		try {
+
+		}
+		catch(ArithmeticException e){
+          return "catch";
+		}
+	}
+}
+

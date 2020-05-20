@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+C:\Users\karti\Google Drive\eclipse-workspace\eclipse-workspace - Copy\.metadata\.plugins\org.eclipse.jdt.core
+305446040.index
+1526749196.index
+1671692264.index
+4116028753.index
+686513318.index
+1866842641.index
+4043795119.index

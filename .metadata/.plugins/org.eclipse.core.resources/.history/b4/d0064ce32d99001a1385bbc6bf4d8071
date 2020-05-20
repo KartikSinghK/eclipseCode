@@ -1,0 +1,41 @@
+package que10;
+import java.awt.*;
+import java.awt.event.*;
+public class ColorChange extends Frame implements ActionListener {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	Button redB;
+	Button blueB;
+    ColorChange(){
+    	redB = new Button("Red");
+    	blueB = new Button("Blue");
+    	blueB.setBounds(230, 200, 50, 30);
+    	redB.setBounds(100, 20, 50, 30);
+    	add(blueB);add(redB);
+    	addWindowListener(new WindowAdapter() {
+    		public void windowClosing(WindowEvent w) {
+    			dispose();
+    		}
+    	});
+    	redB.addActionListener(this);
+    	blueB.addActionListener(this);
+    }
+    public void actionPerformed(ActionEvent a) {
+    	if(a.getSource() == redB) {
+    		setBackground(Color.RED);
+    	}
+    	else if(a.getSource() == redB) {
+    		setBackground(Color.BLUE);
+    	}
+    }
+	public static void main(String[] args) {
+		ColorChange c = new ColorChange();
+	    c.setSize(500, 500);
+	    c.setTitle("Color Change");
+	    c.setVisible(true);
+	    
+	}
+
+}

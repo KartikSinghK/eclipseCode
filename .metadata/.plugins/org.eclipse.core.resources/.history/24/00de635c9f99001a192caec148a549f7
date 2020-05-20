@@ -1,0 +1,21 @@
+package que6;
+import java.io.*;
+public class Copy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        try(FileInputStream in = new FileInputStream(args[0]);
+        		FileOutputStream out = new FileOutputStream(args[1], true)){
+        	
+        	int i;
+        	do {
+        		i = in.read();
+        		out.write(i);
+        	}while(i != -1);
+        }
+        catch(IOException e) {
+        	System.out.println(e);
+        }
+	}
+
+}

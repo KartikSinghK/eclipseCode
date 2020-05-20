@@ -1,0 +1,6 @@
+package underAge;
+
+public class UnderAge extends Exception {
+
+     
+}

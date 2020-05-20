@@ -1,0 +1,18 @@
+package errorDetection;
+
+public class ErrorDetection {
+	void Handel() {
+		int i = 1; 
+		int j = 0;
+		int result = i/j;
+		System.out.println(result);
+	}
+	void Call() {
+		Handel();
+	}
+	public static void main(String[] args) {
+		ErrorDetection.Call();
+		
+	}
+
+}

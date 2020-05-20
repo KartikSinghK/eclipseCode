@@ -1,0 +1,24 @@
+package divByzero;
+import java.util.Scanner;
+public class DivideByZero {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner input = new Scanner(System.in);
+        int num = 0;
+        int denum = 1;
+        System.out.print("Enter the numerator : ");
+        num = input.nextInt();
+        System.out.println(" ");
+        System.out.print("Enter the denominator : ");
+        denum = input.nextInt();
+        try {
+        	if(denum == 0)
+        		throw divByZero;
+        	else System.out.println(num/denum);
+        }
+        catch(ArithmeticException  divByZero)
+        System.out.println("Divide by zero error !!!!");
+	}
+
+}

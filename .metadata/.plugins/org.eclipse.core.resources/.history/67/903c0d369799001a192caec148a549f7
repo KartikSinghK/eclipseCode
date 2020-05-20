@@ -1,0 +1,38 @@
+package que8;
+import java.awt.*;
+import java.awt.event.*;
+public class FramesWithMouse extends Frame implements MouseListener
+ {
+	static int len = 200;
+     FramesWithMouse(String title){
+    	 super(title);
+    	 
+    	 addMouseListener(this);
+    	 addWindowListener(new WindowAdapter() {
+    		 public void windowClosing(WindowEvent w) {
+    		    dispose();	 
+    		 }
+    	 });
+     }
+     public void mouseClicked(MouseEvent m) {
+		 this.setSize(200, 200);
+	 }
+	 public void mouseEntered(MouseEvent m) {
+		 this.setSize(600, 600);
+	 }
+	 public void mouseExited(MouseEvent m) {
+	     dispose();
+	 }
+	 public void mousePressed(MouseEvent m) {
+			   
+	 }
+     public void mouseReleased(MouseEvent m) {
+			   
+	 }
+     
+     public static void main(String[] args) {
+    	 FramesWithMouse f = new FramesWithMouse("You Found it");
+    	 f.setSize(200, 200);
+    	 f.setVisible(true);
+     }
+}

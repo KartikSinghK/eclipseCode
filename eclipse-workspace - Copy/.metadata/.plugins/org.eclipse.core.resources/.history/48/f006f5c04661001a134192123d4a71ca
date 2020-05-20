@@ -1,0 +1,7 @@
+package p2;
+import p1.Shape;
+public class CircleAr extends Shape {
+	 public double area(double len, double bre) {
+		 System.out.println("print");
+	 }
+}

@@ -1,0 +1,58 @@
+package que8;
+import java.awt.*;
+import java.awt.event.*;
+public class Q8_frame extends Frame implements MouseListener, MouseMotionListener {
+		  String msg=" ";
+		  static int a;
+		  static int b;
+		  int mouseX=0, mouseY=0;
+		     public  Q8_frame()
+		     {
+		       addMouseListener(this);
+		       addMouseMotionListener(this);
+		       addWindowListener(new MyWindowAdapter());
+		     }
+		     
+		     public void mouseClicked(MouseEvent me)
+		   {
+		      mouseX=me.getX();
+		      mouseY=me.getY();
+		      setSize(a,b);
+		      msg="mouse clicked";
+		     repaint();
+		   }
+		   public void mouseEntered(MouseEvent me)
+		   {
+		      mouseX=me.getX();
+		       mouseY=me.getY();
+		      setSize(400,400);
+		     msg="mouse entered";
+		     repaint();
+		   }
+		   public void mouseExited(MouseEvent me)
+		   {
+		     setVisible(false);
+		     msg="frame closed";
+		     repaint();
+		   }
+		   public void paint(Graphics g)
+		   {
+		     g.drawString(msg, mouseX,mouseY);
+		   }
+		  public static void main(String[] args) {
+		    Q8_frame ob= new Q8_frame();
+		    ob.setSize(new Dimension(a,b));
+		    ob.setTitle("frame_q8");
+		    ob.setVisible(true);
+
+		  }
+
+		}
+		class MyWindowAdapter extends WindowAdapter
+		{
+		  public void WindowClosing(WindowEvent we)
+		  {
+		    System.exit(0);
+		  }
+		}
+}

@@ -1,0 +1,14 @@
+package que9;
+import java.awt.*;
+import java.awt.event.*;
+public class PinkFrame extends Frame {
+    PinkFrame(String title){
+    	super(title);
+    	this.setBackground(PINK);
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

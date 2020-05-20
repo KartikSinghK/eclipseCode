@@ -1,0 +1,21 @@
+package errorDetection;
+
+public class ErrorDetection {
+
+		public static void main(String args[]) {
+		  int i = 1, j = 0;
+		  int result = 9;
+		  try {
+			  result = i/j;
+			  System.out.println(result);
+		  }
+		  catch(Exception e) {
+			  System.out.println("This will run !!");
+		  }
+		 catch(ArithmeticException a) {
+			  System.out.println("This will run !! above catch is lying");
+		  }
+		}
+	
+}
+

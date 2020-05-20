@@ -1,0 +1,15 @@
+package que7;
+import java.io.*;
+public class Slash {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try(FileWriter f = new FileWriter("File")){
+			
+		}catch(IOException e) {
+			System.out.println(e);
+		}
+        try(BufferedReader b = new BufferedReader(""))
+	}
+
+}

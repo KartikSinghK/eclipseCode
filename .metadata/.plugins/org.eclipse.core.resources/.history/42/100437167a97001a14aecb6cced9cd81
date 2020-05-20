@@ -1,0 +1,16 @@
+package frames;
+import java.awt.*;
+import java.awt.event.*;
+public class Frames extends Frame {
+     Frames(String title){
+    	 super(title);
+    	 
+         this.addWindowListener(new WindowAdapter(){  
+             public void windowClosing(WindowEvent e) {  
+                 this.dispose();  
+             }
+         });  
+         setSize(400, 400);
+         setVisible(true);
+     }
+}

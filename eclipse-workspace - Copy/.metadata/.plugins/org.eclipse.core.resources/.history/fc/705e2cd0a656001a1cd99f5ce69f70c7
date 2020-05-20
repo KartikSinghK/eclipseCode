@@ -1,0 +1,32 @@
+package errorDetection;
+
+class Myexceptionn extends Exception 
+{
+int detail;
+    Myexceptionn(int a) 
+    {
+    detail = a;
+}
+public String toString() 
+    {
+ return "detail";
+}
+}
+class print
+{
+    static void compute (int a) throws Myexceptionn
+    {
+     throw new Myexceptionn(a);  
+    }
+public static void main(String args[]) 
+    {
+        try 
+        {
+            compute(3);
+        }
+       catch(DivideByZeroException e)
+       {
+           System.out.print("Exception");
+       } 
+    }
+}

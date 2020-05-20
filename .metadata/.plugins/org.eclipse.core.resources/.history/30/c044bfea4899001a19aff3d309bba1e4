@@ -1,0 +1,13 @@
+package que11;
+import java.awt.*;
+import java.awt.event.*;
+public class KeyPro extends Frame implements KeyListener {
+    KeyPro(){
+    	addActionLinsener(this)
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

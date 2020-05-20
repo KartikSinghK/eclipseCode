@@ -1,0 +1,13 @@
+package que8;
+import java.awt.*;
+import java.awt.event.*;
+public class FramesWithMouse extends Frame 
+implements MouseListener, MouseMotionListener  {
+	String msg = "";
+     FramesWithMouse(String title){
+    	 super(title);
+    	 addMouseMotionListener(this);
+    	 addMouseListener(this);
+     }
+     
+}

@@ -1,0 +1,9 @@
+package someThing;
+
+class ExcepTion {
+void method () {
+	throw new RuntimeException();
+}
+}  
+
+

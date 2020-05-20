@@ -1,0 +1,41 @@
+package nreFrame;
+import java.awt.*;
+import java.awt.event.*;
+public class NewFrame extends Frame {
+     String kMsg = "This is a test";
+     String mMsg = "";
+     int mouseX = 30, mouseY = 30;
+     Label l = new Label("This is the first label");
+     public NewFrame() {
+    	 addKeyListener(new KeyAdapter() {
+    		 public void keyTyped(KeyEvent k) {
+    			 kMsg += k.getKeyChar();
+    			 repaint();
+    		 }
+    	 });
+    	 addMouseListener(new MouseAdapter() {
+    		public void mousePressed(MouseEvent m) {
+    			mouseX = m.getX();
+    			mouseY = m.getY();
+    			mMsg = "Mouse Down at " + mouseX + ", " + mouseY;
+    			repaint();
+    		}
+    	 });
+    	 addWindowListener(new WindowAdapter() {
+    		 public void windowClosing(WindowEvent w) {
+    		    dispose();	 
+    		 }
+    	 });
+    	 
+     }
+     public void paint(Graphics g) {
+    	 g.drawString(kMsg, 10, 40);
+    	 g.drawString(mMsg, mouseX, mouseY);
+     }
+     public static void main(String args[]) {
+    	 NewFrame f = new NewFrame();
+    	 f.setSize(400, 400);
+    	 f.setVisible(true);
+    	 f.setTitle("This is interesting");
+     }
+}

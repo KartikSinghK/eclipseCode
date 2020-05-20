@@ -1,0 +1,17 @@
+package errorDetection;
+
+public class ErrorDetection {
+	public static void main(String[] args) {
+		int i = 2, j = 0;
+		int result = 0;
+		try {
+			 result = i/j;
+			System.out.println(result);
+		}
+		catch(ArithmeticException e) {
+			System.out.println(e);
+		}
+		
+	}
+
+}

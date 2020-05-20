@@ -1,0 +1,16 @@
+package newers;
+
+public class SomethingDiff {
+	public static void main(String[] args) {
+	try {
+		throw new ArithmeticException();
+	}
+	catch(NullPointerException | ArithmeticException e) {
+		System.out.println("Inside MultiException");
+	}
+	catch(ArithmeticException e) {
+		System.out.println("Inside single Catch");
+	}
+	}
+	
+}

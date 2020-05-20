@@ -1,0 +1,6 @@
+package nreFrame;
+import java.awt.*;
+import java.awt.event.*;
+public class NewFrame extends Frame {
+     
+}

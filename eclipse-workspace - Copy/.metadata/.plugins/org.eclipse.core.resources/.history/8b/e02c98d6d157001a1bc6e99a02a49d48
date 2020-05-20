@@ -1,0 +1,18 @@
+package newers;
+
+public class SomethingDiff {
+	public static void main(String args[]) {
+		int printing() {
+			try {
+				
+			}
+			catch(Exception e){
+				return 2;
+			}
+			finally {
+				return 3;
+			}
+		}
+		
+	   }
+}

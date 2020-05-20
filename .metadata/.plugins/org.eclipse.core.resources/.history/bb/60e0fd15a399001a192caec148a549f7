@@ -1,0 +1,19 @@
+package que7;
+import java.io.*;
+public class Slash {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+        try(BufferedReader b = new BufferedReader(new FileReader("File1")){
+        	String line = b.readLine();
+        	if(line[0] == '/'&& line[1] == '/') {
+        		
+        	}
+        }
+        catch(IOEception e) {
+        	System.out.println(e);
+        }
+	}
+
+}

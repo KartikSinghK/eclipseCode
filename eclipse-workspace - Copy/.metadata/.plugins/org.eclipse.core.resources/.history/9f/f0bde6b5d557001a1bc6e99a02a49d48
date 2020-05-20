@@ -1,0 +1,16 @@
+package newers;
+
+public class SomethingDiff {
+	public static void main(String[] args) {
+		System.out.println(riskyAction());
+		}
+
+	public static String riskyAction(){
+		try{throw new Exception();
+		}catch(Exception e){
+			return "returning from catch blcok";
+		}finally{
+			return "This is finally";
+		}
+		}
+}

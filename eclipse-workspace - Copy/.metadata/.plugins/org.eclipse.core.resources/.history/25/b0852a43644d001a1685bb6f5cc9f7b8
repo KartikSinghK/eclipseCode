@@ -1,0 +1,25 @@
+package divByzero;
+import java.util.Scanner;
+public class DivideByZero {
+
+	public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int num = 0;
+        int denum = 1;
+        System.out.print("Enter the numerator : ");
+        num = input.nextInt();
+        System.out.println(" ");
+        System.out.print("Enter the denominator : ");
+        denum = input.nextInt();
+        try {
+        	if(denum == 0)
+        		throw new ArithmeticException("Divide by zero error !!!!");
+        	else System.out.println("The result = " + num/denum);
+        }
+        catch(ArithmeticException  divByZero) {
+        	System.out.println(divByZero);
+        }
+        
+	}
+
+}

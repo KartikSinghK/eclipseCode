@@ -1,0 +1,28 @@
+package que11;
+import java.awt.*;
+import java.awt.event.*;
+public class KeyPro extends KeyAdapter {
+	String msg = "";
+	Frame f;
+    KeyPro(){
+    	f.addKeyListener(this);
+    	f.addWindowListener(new WindowAdapter() {
+    		public void windowClosing(WindowEvent w) {
+    			f.dispose();
+    		}
+    	});
+    }
+    public void keyTyped(KeyEvent k) {
+    	msg = "Typed Key is : " + k.getKeyChar();
+    	f.repaint();
+    }
+    public void paint(Graphics g) {
+    	g.drawString(msg, 160, 200);
+    }
+    f.setSize(400, 400);
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        
+	}
+
+}

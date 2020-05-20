@@ -1,0 +1,8 @@
+package p2;
+import p1.Shape;
+import java.util.Scanner;
+public class Circle extends Shape {
+   double area() {
+	   return(3.14*r*r);
+   }
+}

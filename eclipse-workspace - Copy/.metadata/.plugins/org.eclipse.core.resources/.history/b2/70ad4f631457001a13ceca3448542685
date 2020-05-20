@@ -1,0 +1,27 @@
+package someThing;
+
+class EXcepTion {
+void method () {
+	throw new RuntimeException();
+}
+}  
+class NEwClass extends EXcepTion {
+	void method() {
+		throw new RuntimeException("This will print ");
+	}
+}
+class Main extends NEwClass {
+	
+	
+}
+public class ThisClass {
+	public static void main(String[] args) {
+		NewClass n = new NEwClass();
+		try {
+			n.method();
+		}
+		catch(RuntimeException e){
+			System.out.println(e);
+		}
+	}
+}

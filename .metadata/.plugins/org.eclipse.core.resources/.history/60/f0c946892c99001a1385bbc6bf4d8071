@@ -1,0 +1,46 @@
+package que10;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+public class Ques9 extends Frame implements ActionListener
+{
+ /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+Label l;TextField tf;
+ Ques9()
+ {
+	 l =  new Label("ENTER YOUR TEXT :");
+	 l.setBounds(150,100,150,20);
+	 tf = new TextField();
+	 tf.setBounds(150,100,150,20);
+	 tf.addActionListener(this);
+	 
+ }
+ public void actionPerformed(ActionEvent e)
+ {
+   String s = tf.getText();
+   l.setText(s);
+   l.setBounds(100,150,300,250);
+   setBackground(Color.pink);
+  }	
+ public static void main(String[] args) 
+	{
+		Ques9 q = new Ques9();
+        q.setTitle("New Frame");
+        q.setSize(500,500);
+	    q.setLayout(null);
+	    q.setVisible(true);
+	    q.addWindowListener(new WindowAdapter()
+      {
+        public void windowClosing(WindowEvent e)
+        {
+            System.exit(0);
+        }
+        
+      });
+}
+}

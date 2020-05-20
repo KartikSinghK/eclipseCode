@@ -1,0 +1,18 @@
+package errorDetection;
+
+public class ErrorDetection {
+	public static void main(String[] args) {
+		int num = 2;
+		int denum = 1;
+		float result = 0;
+		try {
+			 result = num / denum;
+			 System.out.println(result);
+		}
+		catch(ArithmeticException e) {
+			System.out.println("ERROR!! cannot divide by zero ");
+		}
+		
+	}
+
+}

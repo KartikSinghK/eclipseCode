@@ -1,0 +1,7 @@
+package p2;
+import p1.Shape;
+public class Circle extends p1.Shape {
+   double area(double len, double bre) {
+	   double ar = len*bre;
+   }
+}

@@ -1,0 +1,24 @@
+package jskjdkf;
+
+class EXCEpTion {
+void method () {
+	throw new RuntimeException();
+}
+}  
+class NEWClAss extends EXCEpTion {
+	void method() {
+		throw new ArithmeticException("This will print ");
+	}
+}
+public class sssss {
+	public static void main(String[] args) {
+		NEWClAss n = new NEWClAss();
+		try {
+			n.method();
+		}
+		catch(RuntimeException e){
+			System.out.println(e);
+		}
+	}
+}
+

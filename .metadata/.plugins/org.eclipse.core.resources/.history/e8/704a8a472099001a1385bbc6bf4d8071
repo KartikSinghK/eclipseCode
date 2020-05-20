@@ -1,0 +1,19 @@
+package que9;
+import java.awt.*;
+import java.awt.event.*;
+public class PinkFrame extends Frame {
+    PinkFrame(String title){
+    	super(title);
+    	}
+    public void paint(Graphics g) {
+    	g.drawString("This is a string", 100, 200);
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		PinkFrame f = new PinkFrame("Pink Frame");
+		f.setSize(400, 400);
+        f.setBackground(Color.PINK);
+        f.setVisible(true);
+	}
+
+}

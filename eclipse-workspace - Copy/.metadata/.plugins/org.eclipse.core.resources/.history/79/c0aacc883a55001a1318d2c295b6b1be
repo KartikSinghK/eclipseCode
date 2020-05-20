@@ -1,0 +1,27 @@
+package errorDetection;
+
+public class ErrorDetection {
+	void Handel() {
+		int i = 1; 
+		int j = 0;
+		int result = i/j;
+		System.out.println(result);
+	}
+	void Call() {
+		Handel();
+	}
+	public static void main(String[] args) {
+		int num = 2;
+		int denum = 2;
+		float result = 0;
+		try {
+			 result = num / denum;
+			 System.out.println(result);
+		}
+		catch(ArithmeticException e) {
+			System.out.println("ERROR!! cannot divide by zero ");
+		}
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package underAge;
+
+public class UnderAge extends Exception {
+	int age = 0;
+    public UnderAge(int a) {
+    	age = a;
+    }
+    public String toString() {
+    	return("Under age " + age);
+    }
+     
+}

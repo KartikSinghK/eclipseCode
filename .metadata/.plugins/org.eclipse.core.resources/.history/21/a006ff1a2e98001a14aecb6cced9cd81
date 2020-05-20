@@ -1,0 +1,23 @@
+package nreFrame;
+import java.awt.*;
+import java.awt.event.*;
+public class NewFrame extends Frame {
+     String kMsg = "This is a test";
+     String mMsg = "";
+     int mouseX = 30, mouseY = 30;
+     public NewFrame() {
+    	 addKeyListener(new KeyAdapter() {
+    		 public void keyTyped(KeyEvent k) {
+    			 kMsg += k.getKeyChar();
+    			 repaint();
+    		 }
+    	 });
+    	 addMouseListener(new MouseAdapter() {
+    		public void mousePressed(MouseEvent m) {
+    			mouseX = m.getX();
+    			mouseY = m.getY();
+    			mMsg = "Mouse Down at " + mouseX + ", " + mouseY;
+    		}
+    	 });
+     }
+}

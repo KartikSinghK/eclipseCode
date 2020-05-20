@@ -1,0 +1,5 @@
+package errorDetection;
+
+public class Myexception {
+
+}

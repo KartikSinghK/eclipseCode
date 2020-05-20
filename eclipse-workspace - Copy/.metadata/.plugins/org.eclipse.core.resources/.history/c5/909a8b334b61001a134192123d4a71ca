@@ -1,0 +1,10 @@
+package p;
+import p1.*;
+public class MainClass extends Shape {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

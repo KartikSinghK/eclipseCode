@@ -1,0 +1,13 @@
+package underAge;
+
+public class ExceptionDemo {
+    void test(int age) {
+    	if(age < 18)
+    		throw new UnderAge(age);
+    }
+	public static void main(String[] args) {
+		
+
+	}
+
+}

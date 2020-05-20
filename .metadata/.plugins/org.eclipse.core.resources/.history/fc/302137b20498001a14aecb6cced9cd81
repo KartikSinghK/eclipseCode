@@ -1,0 +1,23 @@
+package frames;
+import java.awt.*;
+import java.awt.event.*;
+public class Frames extends Frame implements MouseListener, MouseMotionListener {
+     Frames(String title){
+    	 super(title);
+    	 
+         this.addWindowListener(new WindowAdapter(){  
+             public void windowClosing(WindowEvent e) {  
+                 dispose();  
+             }
+         });  
+         addMouseListener(this);
+         addMouseMotionListener(this);
+         setSize(400, 400);
+         setVisible(true);
+     }
+     String msg = "";
+     int mouseX = 0, mouseY = 0;
+     public void mouseClicked(MouseEvent m) {
+    	 mouseX = 0;
+     }
+};
